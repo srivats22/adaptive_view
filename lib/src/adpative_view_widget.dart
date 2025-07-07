@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:platform_identifier/platform_identifier.dart';
 import '../helper/AdaptiveViewScope.dart';
 import 'one_pane.dart';
 import 'two_pane.dart';
@@ -25,13 +26,8 @@ class AdaptiveView extends StatelessWidget {
     return AdaptiveViewScope(
       child: Builder(
         builder: (context) {
-          final mediaQuery = MediaQuery.of(context);
-          final screenWidth = mediaQuery.size.width;
-          final isDesktop = screenWidth >= breakpoint ||
-              kIsWeb ||
-              defaultTargetPlatform == TargetPlatform.macOS ||
-              defaultTargetPlatform == TargetPlatform.windows ||
-              defaultTargetPlatform == TargetPlatform.linux;
+          final isDesktop = PlatformIdentifier.isDesktop
+          || PlatformIdentifier.isDesktopBrowser;
 
           if (isDesktop) {
             return TwoPaneLayout(

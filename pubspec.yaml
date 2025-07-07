@@ -11,6 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  platform_identifier:
+    git:
+      url: https://github.com/srivats22/platform_identifier.git
+      ref: main
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

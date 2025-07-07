@@ -146,6 +146,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  platform_identifier:
+    dependency: transitive
+    description:
+      path: "."
+      ref: main
+      resolved-ref: a9b76d7dc3223a7322272746f6eb48d5aff2b119
+      url: "https://github.com/srivats22/platform_identifier.git"
+    source: git
+    version: "0.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
