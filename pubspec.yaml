@@ -1,6 +1,6 @@
 name: adaptive_view
 description: "A flutter package for adaptive list view"
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:

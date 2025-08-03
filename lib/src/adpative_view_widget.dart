@@ -40,7 +40,7 @@ class AdaptiveView extends StatelessWidget {
               listBuilder: listBuilder,
               detailBuilder: detailBuilder,
               animateTransitions: animateTransitions,
-              showAppBar: true,
+              showAppBar: showAppBar,
             );
           }
         },
